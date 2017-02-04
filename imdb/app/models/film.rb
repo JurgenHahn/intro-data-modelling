@@ -1,4 +1,4 @@
 class Film < ApplicationRecord
-  has_many :directors, through: :director_film
-  has_many :actors, through: :actor_film
+  has_and_belongs_to_many :directors
+  has_and_belongs_to_many :actors
 end
